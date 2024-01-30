@@ -17,6 +17,9 @@ binary_tree_t *grandparent = node->parent->parent;
 if (node == NULL || node->parent == NULL || grandparent == NULL)
 	return (NULL);
 
+if (grandparent == NULL)
+	return (NULL);
+
 if (grandparent->left == node->parent)
 	return (grandparent->right);
 return (grandparent->left);
