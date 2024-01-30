@@ -19,6 +19,5 @@ if (node == NULL || node->parent == NULL || node->parent->parent == NULL)
 
 if (grandparent->left == node->parent)
 	return (grandparent->right);
-else
-	return (grandparent->left);
+return (grandparent->left);
 }
