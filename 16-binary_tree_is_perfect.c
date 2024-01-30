@@ -19,10 +19,12 @@ if (tree == NULL)
 left_height = binary_tree_height(tree->left);
 right_height = binary_tree_height(tree->right);
 
-if (binary_tree_is_full(tree) && (left_height == right_height))
-	return (1);
-else
+if (left_height != right_height)
 	return (0);
+
+if (!binary_tree_is_full(tree))
+	return (0);
+return (1);
 }
 
 
