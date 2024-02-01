@@ -85,7 +85,7 @@ avl_t *avl_insertion(avl_t **tree, int value)
 }
 
 /**
- * avl_insertionsert - inserts a value in a AVL Tree
+ * avl_insert - inserts a value in a AVL Tree
  *
  * @tree: tree root
  * @value: node value
