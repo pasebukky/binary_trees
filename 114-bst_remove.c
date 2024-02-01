@@ -1,4 +1,4 @@
-include "binary_trees.h"
+#include "binary_trees.h"
 
 /**
  * search - a functin that searches for a node in a binary tree
