@@ -25,7 +25,8 @@ size_t binary_tree_height(const binary_tree_t *tree)
  * @level: level of the tree to perform function on
  * @func: function to perform
  */
-void binary_tree_level_func(const binary_tree_t *tree, size_t level, void (*func)(int))
+void binary_tree_level_func(const binary_tree_t *tree,
+		size_t level, void (*func)(int))
 {
 	if (tree == NULL)
 		return;
