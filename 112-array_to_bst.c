@@ -12,7 +12,7 @@ bst_t *array_to_bst(int *array, size_t size)
 {
 	bst_t *root = NULL;
 	size_t i;
-	
+
 	/* loop through array */
 	for (i = 0; i < size; i++)
 	{
