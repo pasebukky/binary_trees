@@ -9,20 +9,20 @@
  */
 void arr_to_avl_helper(avl_t **root, int *array, size_t min, size_t max)
 {
-        avl_t *new_t = NULL;
-        size_t middle;
+	avl_t *new_t = NULL;
+	size_t middle;
 
-        if (max - min > 1)
-        {
-                middle = (max - min) / 2 + min;
-                new_t = binary_tree_node(*root, array[middle]);
-                if (array[middle] > (*root)->n)
-                        (*root)->right = new_t;
-                else if (array[middle] < (*root)->n)
-                        (*root)->left = new_t;
-                arr_to_avl_helper(&new_t, array, min, middle);
-                arr_to_avl_helper(&new_t, array, middle, max);
-        }
+	if (max - min > 1)
+	{
+		middle = (max - min) / 2 + min;
+		new_t = binary_tree_node(*root, array[middle]);
+		if (array[middle] > (*root)->n)
+			(*root)->right = new_t;
+		else if (array[middle] < (*root)->n)
+			(*root)->left = new_t;
+		arr_to_avl_helper(&new_t, array, min, middle);
+		arr_to_avl_helper(&new_t, array, middle, max);
+	}
 }
 
 /**
