@@ -26,7 +26,7 @@ static bst_t *rm_node(bst_t **root, int value)
 {
 	bst_t *node = *root, *parent = NULL, **plink, *new, *source = NULL;
 
-	while (node)
+	while (node != NULL)
 	{
 		if (node->n == value)
 		{
